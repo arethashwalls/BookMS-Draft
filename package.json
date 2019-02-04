@@ -1,0 +1,27 @@
+{
+  "name": "bookms",
+  "version": "1.0.0",
+  "description": "A prototype lightweight CMS for creating and displaying browser-based books.",
+  "main": "server.js",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.9",
+    "nunjucks": "^3.1.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arethashwalls/BookMS.git"
+  },
+  "author": "Aretha SH Walls",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arethashwalls/BookMS/issues"
+  },
+  "homepage": "https://github.com/arethashwalls/BookMS#readme"
+}
