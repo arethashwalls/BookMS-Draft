@@ -1,0 +1,74 @@
+flow:
+
+
+CREATE:
+    -POST root/ makes new book
+    -POST root/chapter makes new chapter
+    -POST root/chapter/page makes new page
+READ:
+    -GET root/ shows title page
+    -GET root/chapter shows chapter header
+    -GET root/chapter/pagenum shows page
+UPDATE:
+    -PUT root/ updates book 
+    -PUT root/chapter updates chapter
+    -PUT root/chapter/page updates page
+DELETE:
+    -DELETE root/ deletes book
+    -DELETE root/chapter deletes chapter
+    -DELETE root/chapter/page deletes page
+
+
+**DATABASE**
+
+SERIES: {
+    BOOKS: {
+        id: unique id,
+        title: string,
+        cover: img url,
+        authors:
+            [{
+                name: string,
+                books: [{books}]
+            }]
+        tags: [strings]
+        book_num_chapters: int,
+        book_num_pages: int,
+        book_num_words: int,
+        CHAPTERS: {
+            id: unique id,
+            ch_num: int,
+            ch_title: string,
+            ch_authors: [{authors}],
+            tags: [strings],
+            ch_num_pages: int,
+            ch_num_words: int,
+            PAGES:
+                id: unique id,
+                p_num: int,
+                p_title: string,
+                p_authors: [{authors}],
+                tags: [strings],
+                p_num_words: int,
+        }
+        STDALONE_PAGES: [{pages}]
+    }
+    STDALONE_PAGES: [{pages}]
+}
+**SERVER**
+
+config
+    database setup
+controller
+
+db
+
+models
+
+public
+
+views
+
+server.js
+
+**FRONT**
