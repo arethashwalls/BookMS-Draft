@@ -19,6 +19,9 @@ app.set('view engine', 'njk');
 const indexRouter = require('./routes/index');
 app.use('/', indexRouter);
 
+const pageRouter = require('./routes/page')
+app.use('/page', pageRouter);
+
 app.listen(PORT, () => {
     console.log("Server listening on: http://localhost:" + PORT);
 })

@@ -1,0 +1,13 @@
+body, html {
+    position: absolute;
+    width: 100vw;
+    min-height: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: #E3F2E1;
+    color: #221E22;
+    font-size: 18px;
+}
+h1, h2, h3, h4 {
+    font-family: serif;
+}

@@ -1,10 +1,12 @@
-{% extends "main.njk" %}
+{% extends "layouts/main.njk" %}
 
-{% block content %}
-  <h1>Index page</h1>
+{% set pageTitle = "Home" %}
+{% set styles = ["reset", "main", "header", "cover"]%}
 
-  <p>The title variable is:
-    {{title}}</p>
-  {{1 + 9}}
-  should be 10
+{% block body %}
+  <section class="cover-content">
+    <h1 class="main-title">{{book.title}}</h1>
+    <h2 class="author-name">{{book.author}}</h2>
+    <img class="cover-img" src="{{book.cover}}"/>
+  </section>
 {% endblock %}

@@ -1,0 +1,20 @@
+<header>
+    <div class="header-container">
+        <h4>{{book.title}}</h4>
+        <nav>
+            <ul>
+                <li>
+                    <div class="dropdown-box">
+                        <p class="dropdown-link">Contents</p>
+                        <ul class="dropdown">
+                            {% for chapter in book.chapters %}
+                            <li><a href="">{{chapter.ch_num}}: {{chapter.ch_title}}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </li> |
+                <li>About</li>
+            </ul>
+        </nav>
+    </div>
+</header>

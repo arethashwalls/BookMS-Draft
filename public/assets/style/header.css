@@ -1,0 +1,38 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 8%;
+    width: 100vw;
+    background-color: #221E22;
+    color: #C4F1BE;
+}
+header h4, header nav, header ul, header li {
+    display: inline;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+header h4 {
+    color: #C4F1BE;
+    font-size: 2rem;
+}
+header nav {
+    float: right;
+}
+.dropdown-box {
+    position: relative;
+    display: inline-block;
+}
+.dropdown {
+    position: absolute;
+    z-index: 1;
+}
+.dropdown li {
+    display: block;
+}
