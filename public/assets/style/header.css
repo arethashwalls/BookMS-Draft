@@ -2,7 +2,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    min-height: 8%;
+    height: 8%;
     width: 100vw;
     background-color: #221E22;
     color: #C4F1BE;
@@ -14,7 +14,7 @@ header h4, header nav, header ul, header li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 70%;
     height: 100%;
     margin: 0 auto;
 }
@@ -25,14 +25,33 @@ header h4 {
 header nav {
     float: right;
 }
+.header-container > nav {
+    height: 100%;
+}
 .dropdown-box {
+    height: 100%;
     position: relative;
     display: inline-block;
 }
 .dropdown {
+    display: none;
     position: absolute;
     z-index: 1;
+    transform: translate(-10px);
+}
+.dropdown-box:hover .dropdown {
+    display: block;
 }
 .dropdown li {
     display: block;
+    width: 300%;
+    padding: 7px 10px;
+    background-color: #221E22;
+}
+.dropdown li:hover {
+    background-color: #514851;
+}
+.dropdown a {
+    color: #C4F1BE;
+    text-decoration: none;
 }
